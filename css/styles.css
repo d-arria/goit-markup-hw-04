@@ -158,8 +158,25 @@ button {
   text-decoration: none;
 }
 
+.link-contacts::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-envelope::before {
+}
+
+.icon-mobile::before {
+}
+
 .item-contacts:not(:first-child) {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .link-contacts {
@@ -184,9 +201,23 @@ button {
 /* Main. Hero */
 .hero {
   text-align: center;
-  background-color: var(--accent-background-color);
   width: 100%;
   padding: 200px 0;
+}
+
+.hero-bg {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--accent-background-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-image.jpg);
 }
 
 .text-hero {
@@ -246,6 +277,30 @@ button {
 
 .item-features:nth-child(4n) {
   margin-right: 0;
+}
+
+.item-features::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-antenna::before {
+}
+
+.icon-clock::before {
+}
+
+.icon-diagram::before {
+}
+
+.icon-astronaut::before {
 }
 
 .subtitle-features {
