@@ -327,7 +327,8 @@ button {
   text-align: center;
 }
 
-.title-activity {
+.title-activity,
+.title-team {
   margin-bottom: 50px;
 }
 
@@ -400,7 +401,7 @@ button {
   margin-left: 10px;
 }
 
-.desc-item {
+.button-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -411,19 +412,14 @@ button {
   background-color: var(--transparent);
 }
 
-.desc-item:hover,
-.desc-item:focus {
+.button-link:hover,
+.button-link:focus {
   background-color: var(--accent-color);
 }
 
-.desc-item:hover .icon-team,
-.desc-item:focus .icon-team {
+.button-link:hover .icon-team,
+.button-link:focus .icon-team {
   fill: var(--icon-secondary-color);
-}
-
-.button-team {
-  width: 20px;
-  height: 20px;
 }
 
 .icon-team {
@@ -562,7 +558,7 @@ button {
   margin-left: 30px;
 }
 
-.clients-item {
+.clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -573,22 +569,22 @@ button {
   border-radius: 4px;
 }
 
-.clients-link {
+/* .clients-link {
   width: 106px;
   height: 60px;
-}
+} */
 
 .icon-clients {
   fill: var(--icon-primary-color);
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-color);
 }
 
-.clients-item:hover .icon-clients,
-.clients-item:focus .icon-clients {
+.clients-link:hover .icon-clients,
+.clients-link:focus .icon-clients {
   fill: var(--accent-color);
 }
 
@@ -637,7 +633,7 @@ button {
   padding-top: 12px;
 }
 
-.footer .desc-item {
+.footer .button-link {
   background-color: var(--icon-footer-color);
 }
 
@@ -645,8 +641,8 @@ button {
   fill: var(--icon-secondary-color);
 }
 
-.footer .desc-item:hover,
-.footer .desc-item:focus {
+.footer .button-link:hover,
+.footer .button-link:focus {
   background-color: var(--accent-color);
 }
 
